@@ -1,1 +1,76 @@
-hey
+<html> <head><link rel='stylesheet'type='text/css'href='stylesheet.css'><meta name='viewport' content='user-scalable=no,initial-scale=1,maximum-scale=1'/><title>Home</title><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="script.js"></script>
+<style>#error{color:red}select{max-width:130px;min-width: 130px; width: 130px !important;margin:4px; padding:4px ; background-color:#fff; border:1px solid #000; font-weight:bold;font-size:15px}
+.u{margin:5px} #DD,#MM{width:40px;margin:4px; padding:3px}#YYYY{width:80px;margin:4px; padding:3px}.heading{font-weight:bold}
+.top{background-color:#F00;padding:3px}
+.ib .l{display:inline-block;margin-right:4px;float:left;height:80px;width:90px;} .ib .c{display:table-cell} .ib{border-bottom:1px solid #ccc;border-left:1px solid #ccc;border-right:1px solid #ccc;padding:2px;clear:both}
+#mname{font-weight:bold;font-size:30px;color:#2C3539}
+#mpro{background-color:#E5E4E2;padding:0px;text-align:center}
+table{width:100%;margin-left:2px}
+.heading+table td:last-child{text-align:right;padding-right:6px;cellpadding:3px}.cwrapper{margin:4px}p{margin:4px 0px}b{margin:4px 0px}body{color:#222;margin:0;padding:0;
+}.center{text-align:center;}.left,.aleft{text-align:left}.right{text-align:right}
+/* tweaks for tablet and PC users */
+@media(min-width: 1000px) {
+.wcontainer{border-left: 2px solid #ddd;border-right:2px solid #ddd;max-width: 800px;margin:auto;
+  }
+}
+img.aleft{align:left;height:80px;width:62px;margin:0px 3px 0px 1px;}
+.d{float:left;width:100%;margin:2px;background-color:#fff;border:1px solid #c2c2c2}
+.d.e{background-color:#eee}
+.c{display:table-cell;margin:4px;float:left}
+.eEb{background-color:#fff;border-spacing:0;border-top:1px solid #ccc;width:100%}
+.eEb a{font-weight:bold}
+.wla{color:#000;font-size:14px;padding:6px 0px 6px 8px;text-decoration:none;text-align:center}
+.rfa,.x4{padding:5px 0px}
+.rfa.sn,.x4.sn{border-bottom:3px solid #4c8efb;cursor:default}
+.wla,.uRa{border-right:1px solid #ccc;color:#000}
+.uRa{font-size:14px;padding:6px 0px 6px 8px;text-align:center}
+.heading{background-color:#B8E2EF;border-top:1px solid #82CAFF;padding:3px;}
+.clear{clear:both}a{text-decoration:none}
+body{margin:0px; padding:0px;width:100%}
+
+
+
+
+</style>
+
+</head> <body>
+<?php include("nav.php"); ?>
+
+<div id="mpro"style="padding:8px;margin:0px"><img width="80%"src="<?php
+echo $proimg;
+?>"><p id='mname'><?php  echo $name;?></p></div>
+
+
+<div id='homenu'><table class="eEb"><tr><td width="33.33%"class="x4 sn"><div class="uRa">About</div></td><td width="33.33%"class="x4"><a href="<?php echo $tllink; ?>"><div class="wla">Timeline</div></a></td><td width="33.33%"class="rfa"><a href="<?php echo $ablink; ?>"><div class="wla">Photos</div></a></td></tr></table></div>
+
+
+<div class='heading'>Basics</div><table><tr><td>Birthday</td><td><?php  echo $birthday;?></td></tr><tr><td>Live in</td><td></td></tr><tr><td>Hometown</td><td><?php  echo $hometown;?></td></tr><tr><td>Nationality</td><td>Indian</td></tr><tr><td>Gender</td><td><?php  echo $gender;?></td></tr><tr><td>Religion</td><td><?php  echo $dreligion; ?></td></tr><tr><td>Interested in</td><td>Womans</td></tr><tr><td>Relationship</td><td><?php echo $drelationship.$drelate?></table>
+
+<div class='heading'>Favourite Person</div><table cellpadding='3'><tr><td>sportperson</td><td><?php  echo $dsportperson; ?></td></tr><tr><td>Politician</td><td><?php  echo $dpolitician; ?></td></tr><tr><td>Actor</td><td><?php  echo $dactor; ?></td></tr><tr><td>Actress</td><td><?php  echo $dactress; ?></td></tr><tr><td>Teleactor</td><td><?php  echo $dteleactor; ?></td></tr><tr><td>Teleactress</td><td><?php  echo $dteleactress; ?></td></tr></table>
+<div class="heading">Contact Info</div><table cellpadding='3'>
+
+<?php
+
+if($priphone==0||!isset($_GET['fid']))
+{
+echo "<tr><td>Mobile Number</td><td>$mobileno</td></tr>";
+}
+
+
+if($priemail==0||!isset($_GET['fid']))
+{
+echo "<tr><td>Email</td><td>$email</td></tr>";
+}
+?>
+</table>
+
+
+
+
+<script>
+
+</script>
+
+
+</html>
