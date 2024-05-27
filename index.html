@@ -19,37 +19,54 @@ table{width:100%;margin-left:2px}
 .clear{clear:both}a{text-decoration:none}
 body{margin:0px; padding:0px;width:100%}
 
+#container{
+ background:#1E90FF;background: -webkit-radial-gradient(bottom, #73D6F5 12%, #1E90FF);background: radial-gradient(at bottom, #73D6F5 12%, #1E90FF);width: 100%;
+margin:0px; display:block;background-image:url('coverpic/coverpuc.jpg');background-repeat:repeat;
+  background-size:cover; -moz-background-size: cover;-webkit-background-size: cover;
+background-position:0px 50%;
+}
 
+
+.profile-img{position:relative;top:0px;left:0px;right:0px;display: block; height: 200px;  overflow: hidden; width:200px;left:0; right:0;margin-left: auto; margin-right: auto;
+}
+
+.profile-img img {
+  background-color: #fff;  border-radius: 2px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07); height:140px;
+width:140px; padding: 0px;
+text-align:center;
+border-radius:50%;box-sizing: border-box; background-color: #fff; border: 4px solid #3385ff;
+Position: absolute;bottom:0px;left:0; right:0;
+margin-left: auto; margin-right: auto;
+object-fit: cover;
+}
 
 
 </style>
 
 </head> <body>
 
+<div id="container">
+<div class='profile-img'><img src=''>
+</div>
+</div>
 
 
+<div class='heading'>Basics</div><table><tr><td>Birthday</td><td><?php  echo $birthday;?></td></tr><tr><td>Live in</td><td></td></tr><tr><td>Hometown</td><td><?php  echo $hometown;?></td></tr><tr><td>Nationality</td><td>Indian</td></tr><tr><td>Gender</td><td><?php  echo $gender;?></td></tr><tr><td>Religion</td><td><?php  echo $dreligion; ?></td></tr><tr><td>Interested in</td><td>Womans</td></tr><tr><td>Relationship</td><td> </td></tr></table>
 
-
-
-
-<div class='heading'>Basics</div><table><tr><td>Birthday</td><td><?php  echo $birthday;?></td></tr><tr><td>Live in</td><td></td></tr>
-  <tr><td>Hometown</td><td><?php  echo $hometown;?></td></tr><tr><td>Nationality</td><td>Indian</td></tr><tr><td>Gender</td><td><?php  echo $gender;?></td></tr>
-  <tr><td>Religion</td><td><?php  echo $dreligion; ?></td></tr>
-  <tr><td>Interested in</td><td>Womans</td></tr><tr><td>Relationship</td><td> </td></tr></table>
-
-<div class='heading'>Favourite Person</div><table cellpadding='3'><tr><td>sportperson</td><td><?php  echo $dsportperson; ?></td></tr>
-  <tr><td>Politician</td><td><?php  echo $dpolitician; ?></td></tr><tr><td>Actor</td><td><?php  echo $dactor; ?></td></tr><tr><td>Actress</td><td>name</td></tr><tr><td>Teleactor</td><td>name</td></tr><tr><td>Teleactress</td><td>some name</td></tr></table>
+<div class='heading'>Favourite Person</div><table cellpadding='3'><tr><td>sportperson</td><td><?php  echo $dsportperson; ?></td></tr><tr><td>Politician</td><td><?php  echo $dpolitician; ?></td></tr><tr><td>Actor</td><td><?php  echo $dactor; ?></td></tr><tr><td>Actress</td><td>name</td></tr><tr><td>Teleactor</td><td>name</td></tr><tr><td>Teleactress</td><td>some name</td></tr></table>
 
 <div class="heading">Contact Info</div>
 <table cellpadding='3'>
-<tr><td>Mobile Number</td><td>$mobileno</td></tr>";
-<tr><td>Email</td><td></td></tr>";
-
+<tr><td>Mobile Number</td><td>$mobileno</td></tr>
+<tr><td>Email</td><td></td></tr>
 </table>
 
 
 
 
+<script>
+
+</script>
 
 
 </html>
